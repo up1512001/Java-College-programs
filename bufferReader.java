@@ -4,12 +4,12 @@ class bufferReader {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String c;
-        System.out.println("Enter string:");
+        char c;
+        System.out.println("Enter characters:");
 
         do{
-            c = br.readLine();
+            c = (char)br.read();
             System.out.println("Char ->"+c);
-        }while(!c.equals("u"));
+        }while(c != 'u');
     }
 }
